@@ -19,5 +19,9 @@
 - [aether](https://aether.app)
 - [subsocial](https://subsocial.network)
 
+## Для тестирования
+- Установить DGraph.
+- Скачать [HTML](https://raw.githubusercontent.com/graphql/graphiql/main/examples/graphiql-cdn/index.html) и поменять там хост.
+
 ## Слоган
 "Закрытый клуб для друзей, где за пиво надо платить, но послушать пьяные бредни можно и бесплатно."
