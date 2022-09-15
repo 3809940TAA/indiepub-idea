@@ -1,0 +1,48 @@
+# Add user
+
+mutation {
+  addUser(input: [{ username: "Артём"}]) {
+    user {
+      id
+      username
+    }
+  }
+}
+
+# Add post by user
+
+mutation {
+  addPost(input: [
+    {
+      title: "Первый пост",
+      text: "very interesting",
+      by: {
+        id: "0x2"
+      }
+    }
+  ]) {
+    post {
+      id
+      title
+    }
+  }
+}
+
+# or
+
+mutation {
+  addPost(input: [
+    {
+      title: "Второй пост",
+      text: "very interesting",
+      by: {
+        username: "Артём"
+      }
+    }
+  ]) {
+    post {
+      id
+      title
+    }
+  }
+}

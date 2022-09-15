@@ -13,6 +13,11 @@
 ## Похожие проекты
 - [vas3k.club](https://github.com/vas3k/vas3k.club)
 - [Ghost](https://github.com/TryGhost/Ghost)
+- Substack
+- Medium
+### Web3
+- [aether](https://aether.app)
+- [subsocial](https://subsocial.network)
 
 ## Слоган
 "Закрытый клуб для друзей, где за пиво надо платить, но послушать пьяные бредни можно и бесплатно."

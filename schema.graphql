@@ -1,0 +1,29 @@
+type Post {
+    id: ID!
+    title: String! @search(by: [term])
+    text: String! @search(by: [fulltext])
+    by: User!
+    comments: [Comment] @hasInverse(field: for)
+}
+
+type User {
+    id: ID!
+    username: String! @search(by: [hash, regexp])
+    posts: [Post] @hasInverse(field: by)
+    comments: [Comment] @hasInverse(field: by)
+    bookmarks: [Bookmark] @hasInverse(field: user)
+}
+
+type Comment {
+    id: ID!
+    for: Post!
+    by: User!
+    text: String @search(by: [fulltext])
+    rating: Int @search
+}
+
+type Bookmark {
+    id: ID!
+    post: Post!
+    user: User!
+}
